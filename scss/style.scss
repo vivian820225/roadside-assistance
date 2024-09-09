@@ -115,13 +115,13 @@ picture {
   }
 
   &::before {
-    width: 24px;
+    width: 20px;
     height: 4px;
   }
 
   &::after {
     width: 4px;
-    height: 24px;
+    height: 20px;
   }
 }
 
@@ -163,12 +163,22 @@ picture {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1.25rem;
+  padding: 1.25rem 1.5rem;
   background-color: var(--secondary);
   text-align: center;
   color: #fff;
   p {
     font-size: 0.75rem;
+
+    &:first-of-type::after {
+      content: '';
+      display: block;
+      width: 50vw;
+      max-width: 320px;
+      height: 2px;
+      background-color: #fff;
+      margin: 1rem auto 0.5rem auto;
+    }
   }
 }
 
