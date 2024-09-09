@@ -182,7 +182,8 @@ picture {
   }
 
   .btn-primary {
-    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
 
     &:hover {
       color: var(--primary);
@@ -195,7 +196,7 @@ picture {
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
