@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 @import './normalize.scss';
 
 :root {
-  --black: #222;
+  --black: #1c1c1c;
+  --text-grey: #666;
   --grey-light: #e8e8e8;
   --grey-dark: #6e6e6e;
   --primary: #ffbd59;
   --secondary: #005f73;
+  --font-overpass: 'Overpass', sans-serif;
 }
 
 *,
@@ -25,7 +26,7 @@ body {
   font-family: 'Noto Sans TC', '微軟正黑體', 'Microsoft JhengHei', sans-serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body {
     padding-top: 96px;
   }

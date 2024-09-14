@@ -23,7 +23,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .main-banner {
     padding: 0 2rem;
     height: 70dvh;
@@ -58,15 +58,19 @@
   }
 
   .content {
-    padding: 1rem 0.5rem;
+    padding: 1.5rem 1.75rem;
+    color: var(--text-grey);
   }
 
   .card-title {
     margin-bottom: 0.5rem;
+    color: var(--black);
+    margin-bottom: 16px;
+    font-family: var(--font-overpass);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .services {
     padding: 4.5rem 0;
 
@@ -153,6 +157,7 @@
 
   .sub {
     color: var(--secondary);
+    font-family: var(--font-overpass);
     padding-left: 8px;
   }
 
@@ -167,7 +172,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .prices {
     padding: 4.5rem 0;
 
@@ -216,6 +221,10 @@
     gap: 1rem;
   }
 
+  p {
+    color: var(--text-grey);
+  }
+
   .img-wrapper {
     height: 200px;
 
@@ -227,7 +236,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .recycling {
     padding: 4.5rem 0;
     display: grid;
@@ -252,7 +261,9 @@
     margin-bottom: 1rem;
     .sub {
       font-size: 1rem;
-      color: var(--grey-dark);
+      color: var(--text-grey);
+      font-family: var(--font-overpass);
+      margin-top: 0.5rem;
     }
   }
 
@@ -290,13 +301,14 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .cases {
     padding: 4.5rem 0;
     .section-title {
       margin-bottom: 2rem;
       .sub {
         font-size: 1.5rem;
+        margin-top: 1rem;
       }
     }
 
@@ -330,6 +342,10 @@
   gap: 1rem;
   text-align: center;
 
+  p {
+    color: var(--text-grey);
+  }
+
   .btn-group {
     display: flex;
     align-items: center;
@@ -348,7 +364,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .contact {
     padding: 4.5rem 0;
 
@@ -363,6 +379,52 @@
         background-color: var(--secondary);
         color: #fff;
       }
+    }
+  }
+}
+
+.icon-fixed {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+
+  img {
+    width: calc(100% - 30px);
+  }
+
+  &.arrow {
+    display: none;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--primary);
+  }
+
+  &.phone {
+    bottom: 1.5rem;
+    right: 1rem;
+    background-color: #098d09;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icon-fixed {
+    &:hover {
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    &.arrow {
+      display: flex;
+    }
+
+    &.phone {
+      display: none;
     }
   }
 }

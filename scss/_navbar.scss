@@ -25,7 +25,7 @@
 
 .nav-logo {
   width: auto;
-  height: 48px;
+  height: 60px;
 }
 
 .menu-button {
@@ -41,9 +41,17 @@
   }
 }
 
+.contact-number-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+
 .contact-number {
   padding: 8px 12px;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: bold;
   text-align: center;
   white-space: nowrap;
   color: var(--secondary);
@@ -69,13 +77,14 @@
   text-align: center;
   padding: 12px;
   transition: color 0.2s;
+  cursor: pointer;
 
   &.active {
     color: var(--secondary);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header {
     font-size: 1.25rem;
   }
@@ -93,9 +102,15 @@
     display: none;
   }
 
+  .contact-number-wrapper {
+    padding: 0;
+  }
+
   .contact-number {
     order: 1;
     font-size: 1.25rem;
+    font-weight: normal;
+    margin-left: 2rem;
     &:hover {
       color: #fff;
       background-color: var(--secondary);

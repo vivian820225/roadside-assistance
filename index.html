@@ -15,28 +15,22 @@
       content="台中彰化南投苗栗專業24小時道路救援服務，立即撥打0936-389-467。立群拖吊車專營拖吊貨車、遊覽車、市公車、電公車、混泥土車、拖車頭、大小型車輛、一般轎車"
     />
     <meta property="og:image" content="images/og.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.bunny.net/css?family=Noto+Sans+TC%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%7CLato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7COverpass%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;subset=arabic%2Cbengali%2Ccyrillic%2Ccyrillic-ext%2Cdevanagari%2Cgreek%2Cgreek-ext%2Cgujarati%2Chebrew%2Ckhmer%2Ckorean%2Clatin-ext%2Ctamil%2Ctelugu%2Cthai%2Cvietnamese&amp;display=swap&amp;ver=292-wp"
+      media="all"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>立群拖吊車</title>
   </head>
   <body>
     <header class="header">
       <nav class="navbar">
-        <a class="nav-logo" href="#top">
-          <picture>
-            <source
-              srcset="images/logo.png"
-              media="(min-width: 768px) and (orientation: landscape)"
-            />
-            <source
-              srcset="images/logo-m.png"
-              media="(max-width: 767px) and (orientation: portrait)"
-            />
-            <img src="images/logo.png" alt="立群拖吊車" />
-          </picture>
+        <a class="nav-logo cursor-pointer go-top">
+          <img src="images/logo.png" alt="立群拖吊車" />
         </a>
-        <a class="contact-number" href="tel:0936389467">
-          立即來電：0936-389-467
-        </a>
+
         <div class="menu-button cursor-pointer">
           <svg
             class="hamburger"
@@ -54,18 +48,17 @@
         <div class="menu-wrapper">
           <ul class="menu-list">
             <li>
-              <a data-href="#top" class="menu-item cursor-pointer">
-                立群拖吊車
-              </a>
+              <a data-href="#top" class="menu-item"> 立群拖吊車 </a>
             </li>
             <li>
-              <a data-href="#price" class="menu-item cursor-pointer">
-                服務價目表
-              </a>
+              <a data-href="#price" class="menu-item"> 服務價目表 </a>
             </li>
             <li>
-              <a data-href="#recycling" class="menu-item cursor-pointer">
-                報廢車回收
+              <a data-href="#recycling" class="menu-item"> 報廢車回收 </a>
+            </li>
+            <li class="contact-number-wrapper">
+              <a class="contact-number" href="tel:0936389467">
+                立即來電：0936-389-467
               </a>
             </li>
           </ul>
@@ -371,6 +364,12 @@
       <p>立群拖吊車｜台中.彰化.南投.苗栗｜快速出車｜專人報價｜24H 道路救援</p>
       <p>&copy; 2024 立群拖吊車</p>
     </footer>
+    <a class="icon-fixed phone" href="tel:0936389467">
+      <img src="./images/icon-phone.svg" alt="立即聯絡" />
+    </a>
+    <a class="icon-fixed arrow go-top">
+      <img src="./images/icon-arrow.svg" alt="回到頂部" />
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="./js/main.js"></script>

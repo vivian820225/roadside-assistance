@@ -2,9 +2,10 @@ window.addEventListener('DOMContentLoaded', () => {
   const contents = document.querySelectorAll('.collapse-wrapper .contents-box')
   const titles = document.querySelectorAll('.title-box')
   const body = document.body
-  const navButtons = document.querySelectorAll('.navbar .menu-item')
+  const navButtons = document.querySelectorAll('.menu-item')
   const menuButton = document.querySelector('.navbar .menu-button')
   const menu = document.querySelector('.navbar .menu-wrapper')
+  const goTopButtons = document.querySelectorAll('.go-top')
 
   let paddingTopValue = 0
   let isCollapseBound = false
@@ -97,7 +98,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const bodyStyle = window.getComputedStyle(body)
     paddingTopValue = parseInt(bodyStyle.getPropertyValue('padding-top'), 10)
 
-    if (windowWidth <= 768) {
+    if (windowWidth <= 1024) {
       bindCollapseEvents()
       bindMenuButtonEvent()
       collapseAllCollapse()
@@ -134,6 +135,12 @@ window.addEventListener('DOMContentLoaded', () => {
       }
 
       window.scrollTo({ top: positionTop, behavior: 'smooth' })
+    })
+  })
+
+  goTopButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     })
   })
 
