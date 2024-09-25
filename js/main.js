@@ -73,6 +73,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  const closeMenu = () => {
+    menu.classList.remove('show')
+    menu.style.height = 0
+  }
+
   const bindMenuButtonEvent = () => {
     if (!isMenuButtonBound) {
       menuButton.addEventListener('pointerdown', handleMenuButtonClick)
@@ -149,7 +154,12 @@ window.addEventListener('DOMContentLoaded', () => {
   )
 
   window.addEventListener('scroll', () => {
+    const windowWidth = window.innerWidth
     let currentPosition = window.scrollY + paddingTopValue
+
+    if (windowWidth <= 1024) {
+      closeMenu()
+    }
 
     sections.forEach((section, index) => {
       if (!section) return
