@@ -126,6 +126,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   navButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
+      e.preventDefault()
       navButtons.forEach((btn) => btn.classList.remove('active'))
       button.classList.add('active')
       const section = button.getAttribute('data-href')
@@ -144,7 +145,8 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   goTopButtons.forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault()
       window.scrollTo({ top: 0, behavior: 'smooth' })
     })
   })

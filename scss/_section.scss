@@ -2,18 +2,25 @@
   position: relative;
   width: 100%;
   height: 60dvh;
+  max-height: 768px;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 1rem;
-  background-image: url('../images/banner.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   color: #fff;
   text-shadow: 0 0 10px var(--secondary);
+
+  .banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+  }
 
   p {
     max-width: 80vw;
@@ -116,7 +123,6 @@
 
   .section-title {
     text-align: center;
-    color: #fff;
     margin-bottom: 1rem;
   }
 
