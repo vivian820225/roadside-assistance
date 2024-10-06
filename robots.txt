@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://liqun-towtruck.com/sitemap.xml
